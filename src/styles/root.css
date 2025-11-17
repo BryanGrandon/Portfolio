@@ -1,0 +1,20 @@
+@font-face {
+  font-family: 'Basicaline';
+  src: url('/fonts/Basicaline.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --primary: #ff411d;
+  --secondary: #4e40de;
+  --custom-source: 'Basicaline', sans-serif;
+}
+
+:root {
+  --main-source: 'Montserrat Variable', sans-serif;
+  --bg-selection: #1b1919;
+  --underlay-dark: #1d2129;
+  --underlay-light: #efefef;
+}
