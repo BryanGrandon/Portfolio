@@ -1,6 +1,6 @@
 @import 'tailwindcss';
-/* root */
-@import './root.css';
+@plugin '@tailwindcss/typography'; /* npm install -D @tailwindcss/typography */
+@import './root.css'; /* root */
 
 @theme {
   --color-primary: var(--primary);

@@ -1,23 +1,30 @@
 ---
 import Layout from '../layouts/Layout.astro'
+import Navbar from '../components/core/layout/Navbar'
 ---
 
 <Layout>
   <header>
-    <nav>
-      <a href='/'>Home</a>
-      <a href='/project'>Projects</a>
-      <a href='/contact'>Contact</a>
-    </nav>
-    <article>
-      <h1>Portfolio</h1>
-      <img src='#' alt='img' />
+    <Navbar client:load />
+    <article class='test flex flex-col lg:flex-row items-center p-4 w-fit mx-auto'>
+      <section class='flex flex-col gap-4'>
+        <section>
+          <h1 class='font-basicaline text-4xl'>Hello, My name is Bryan Grandon</h1>
+          <p>I'm Frontend Developer</p>
+        </section>
+        <p class='prose prose-lg dark:prose-invert'>
+          With the goal of creating websites that are not only functional, but also aesthetically pleasing and easy to navigate. Always willing to learn new technologies and improve my skills to grow
+          as a developer.
+        </p>
+      </section>
+
+      <img src='https://repository-images.githubusercontent.com/439351023/e70fb31f-88fe-498f-9f7b-72e9f105958b' alt='img' class='h-50 w-50 object-cover rounded-full' />
     </article>
   </header>
+
   <main>
     <article>
       <h2>Projects</h2>
-
       <section>
         <section>
           <section>
