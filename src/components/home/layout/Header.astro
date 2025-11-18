@@ -1,0 +1,23 @@
+---
+import general from '../../../content/general.json'
+const { header } = general
+const { title, subtitle, paragraph, img } = header
+---
+
+<header id='home' class='bg-white/60'>
+  <article class='flex flex-col-reverse lg:flex-row items-center p-4 gap-8 max-w-350 mx-auto h-screen justify-evenly'>
+    <section class='flex flex-col gap-4'>
+      <section>
+        <h1 class='font-basicaline font-bold text-4xl'>{title}.</h1>
+        <p class='text-primary font-semibold text-shadow-xs text-shadow-gray-600/60 text-lg'>{subtitle}.</p>
+      </section>
+      {paragraph.map((el) => <p class='prose'>{el}</p>)}
+      <ul class='flex gap-4'>
+        <li>github</li>
+        <li>linkedin</li>
+      </ul>
+    </section>
+
+    <img src={img.url} alt={img.alt} class='block max-w-90 object-cover rounded-3xl shadow-lg shadow-gray-600/60' />
+  </article>
+</header>
