@@ -1,0 +1,67 @@
+[
+  {
+    "id": 1,
+    "title": "Color Palette",
+    "description": "Generate your color palette for your projects",
+    "image": {
+      "src": "",
+      "alt": ""
+    },
+    "url": "https://bryangrandon.github.io/Color-Palette/",
+    "ariaLabel": "link color palette",
+    "technologies": ["React", "TS", "Vite", "Sass", "ReactRouterDom", "Vitest", "React-Toastify", "ExtractColor"],
+    "highlight": true
+  },
+  {
+    "id": 2,
+    "title": "Pokedex",
+    "description": "The pokedex is a device from the video game or animated series that allows you to view the statistics of the different pokemon.",
+    "image": {
+      "src": "",
+      "alt": ""
+    },
+    "url": "https://bryangrandon.github.io/Pokedex/",
+    "ariaLabel": "link pokedex",
+    "technologies": ["React", "Vite", "Sass", "ReactIcons"],
+    "highlight": true
+  },
+  {
+    "id": 3,
+    "title": "Midas touch",
+    "description": "We foster the growth of new talent through training, mentoring and real opportunities. We transform potential into trajectory.",
+    "image": {
+      "src": "",
+      "alt": ""
+    },
+    "url": "https://bryangrandon.github.io/Midas-Touch/",
+    "ariaLabel": "Midas-touch",
+    "technologies": ["TS", "Astro", "Tailwind CSS"],
+    "highlight": true
+  },
+  {
+    "id": 4,
+    "title": "Nasa",
+    "description": "Astronomical Image of the Day: Presents each day a different image or photograph of our fascinating universe, along with a brief explanation written by a professional astronomer.",
+    "image": {
+      "src": "",
+      "alt": ""
+    },
+    "url": "https://bryangrandon.github.io/Nasa/",
+    "ariaLabel": "link Nasa",
+    "technologies": ["React", "Vite", "Sass", "ReactIcons"],
+    "highlight": false
+  },
+  {
+    "id": 5,
+    "title": "",
+    "description": "",
+    "image": {
+      "src": "",
+      "alt": ""
+    },
+    "url": "https://bryangrandon.github.io//",
+    "ariaLabel": "",
+    "technologies": ["React", "Vite", "Sass", "ReactIcons"],
+    "highlight": false
+  }
+]

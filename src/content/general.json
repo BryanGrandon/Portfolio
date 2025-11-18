@@ -1,0 +1,36 @@
+{
+  "header": {
+    "title": "Hello, I'm Bryan Grandon",
+    "subtitle": "Frontend Developer",
+    "paragraph": [
+      "With the goal of creating websites that are not only functional, but also aesthetically pleasing and easy to navigate. Always willing to learn new technologies and improve my skills to grow as a developer."
+    ],
+    "img": {
+      "url": "https://files.kick.com/images/channel/2583814/banner_image/3ebbfa2a-7ad5-43e6-9d50-88fad93919d3",
+      "alt": ""
+    }
+  },
+
+  "project": {
+    "title": "Project",
+    "paragraph": [""]
+  },
+
+  "about": {
+    "title": "About",
+    "paragraph": [
+      "I am a junior frontend developer with a passion for creating aesthetically pleasing and functional web applications. With a focus on user experience and performance, I strive to deliver high quality code and innovative solutions.",
+      "I am always willing to learn and grow as a developer, and am excited to take on new challenges in the ever-evolving world of web development."
+    ]
+  },
+  "social": {
+    "github": {
+      "ariaLabel": "Open Bryan Grandon's GitHub profile.",
+      "url": "https://github.com/BryanGrandon"
+    },
+    "linkedin": {
+      "ariaLabel": "Open Bryan Grandon's LinkedIn profile.",
+      "url": "https://www.linkedin.com/in/bryan-grandon/"
+    }
+  }
+}
