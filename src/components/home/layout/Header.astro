@@ -1,6 +1,9 @@
 ---
 import general from '../../../content/general.json'
-const { header } = general
+import IconGithub from '../../core/icons/IconGithub'
+import IconLinkedin from '../../core/icons/IconLinkedin'
+import LinkIcon from '../../core/ui/LinkIcon.astro'
+const { header, social } = general
 const { title, subtitle, paragraph, img } = header
 ---
 
@@ -13,8 +16,8 @@ const { title, subtitle, paragraph, img } = header
       </section>
       {paragraph.map((el) => <p class='prose'>{el}</p>)}
       <ul class='flex gap-4'>
-        <li>github</li>
-        <li>linkedin</li>
+        <LinkIcon client:load href={social.github.url} ariaLabel={social.github.ariaLabel}><IconGithub size='2rem' slot='icon' /></LinkIcon>
+        <LinkIcon client:load href={social.linkedin.url} ariaLabel={social.linkedin.ariaLabel}><IconLinkedin size='2rem' slot='icon' /></LinkIcon>
       </ul>
     </section>
 

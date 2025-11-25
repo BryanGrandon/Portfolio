@@ -1,0 +1,14 @@
+---
+type link_icon = {
+  href: string
+  ariaLabel: string
+}
+
+const { href, ariaLabel } = Astro.props as link_icon
+---
+
+<a href={href} aria-label={ariaLabel} class='hover:text-primary hover:scale-105 active:scale-95'>
+  <slot name='before-icon' />
+  <slot name='icon' />
+  <slot name='after-icon' />
+</a>
