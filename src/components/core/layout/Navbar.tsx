@@ -1,10 +1,10 @@
 import { useEffect } from 'preact/hooks'
 import { NAVIGATION } from '../../../utils/constants/navigation'
 import { handlerNavbarScroll } from '../../../utils/functions/handlerNavbarScroll'
-import useNavbar from '../../../hooks/useNavbar'
 import { hideNavbarOnScroll } from '../../../utils/functions/hideNavbarOnScroll'
-import HamburgerMenuAnimation from '../ui/HamburgerMenuAnimation'
 import { clickHamburgerMenu } from '../../../utils/functions/clickHamburgerMenu'
+import HamburgerMenuAnimation from '../ui/HamburgerMenuAnimation'
+import useNavbar from '../../../hooks/useNavbar'
 
 const Navbar = () => {
   const { visibleSectionListener, selected } = useNavbar()
@@ -22,10 +22,7 @@ const Navbar = () => {
     })
   }, [])
 
-  const clickMenu = () => {
-    const $menu = document.getElementById('menu-movil')
-    $menu?.classList.toggle('translate-y-0')
-  }
+  const clickOpenAndCloseMenu = () => document.getElementById('menu-movil')?.classList.toggle('translate-y-0')
 
   return (
     <>
@@ -41,7 +38,7 @@ const Navbar = () => {
               </a>
             ))}
           </section>
-          <button onClick={clickMenu} class='flex md:hidden justify-center items-center h-4 w-5'>
+          <button onClick={clickOpenAndCloseMenu} class='flex md:hidden justify-center items-center h-4 w-5'>
             <HamburgerMenuAnimation />
           </button>
         </section>
@@ -49,7 +46,7 @@ const Navbar = () => {
           <section class='flex flex-col justify-center rounded-xl overflow-hidden shadow shadow-gray-600 min-w-60'>
             {NAVIGATION.map((el) => (
               <a
-                onClick={clickMenu}
+                onClick={clickOpenAndCloseMenu}
                 key={el.id}
                 href={el.url}
                 className={`navigation-link text-center p-4 font-xl capitalize font-semibold ${selected == el.nav.toLowerCase() ? 'bg-primary text-white' : ''}`}

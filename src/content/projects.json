@@ -2,66 +2,170 @@
   {
     "id": 1,
     "title": "Color Palette",
-    "description": "Generate your color palette for your projects",
+    "description": "Color-Palette is a web tool for quickly and intuitively generating color palettes, ideal for web design and visual projects.",
     "image": {
       "src": "",
       "alt": ""
     },
     "url": "https://bryangrandon.github.io/Color-Palette/",
-    "ariaLabel": "link color palette",
+    "ariaLabel": "Open Color Palette project: a web tool to generate color palettes",
     "technologies": ["React", "TS", "Vite", "Sass", "ReactRouterDom", "Vitest", "React-Toastify", "ExtractColor"],
     "highlight": true
   },
   {
     "id": 2,
     "title": "Pokedex",
-    "description": "The pokedex is a device from the video game or animated series that allows you to view the statistics of the different pokemon.",
+    "description": "Pokedex is a web application for quickly and easily searching for and viewing information about Pokémon.",
     "image": {
       "src": "",
       "alt": ""
     },
     "url": "https://bryangrandon.github.io/Pokedex/",
-    "ariaLabel": "link pokedex",
+    "ariaLabel": "Open Pokedex project: a web app to search and view Pokémon information",
     "technologies": ["React", "Vite", "Sass", "ReactIcons"],
     "highlight": true
   },
   {
     "id": 3,
     "title": "Midas touch",
-    "description": "We foster the growth of new talent through training, mentoring and real opportunities. We transform potential into trajectory.",
+    "description": "Midas Touch is a landing page that promotes new talent through training, mentoring, and opportunities for professional growth.",
     "image": {
       "src": "",
       "alt": ""
     },
     "url": "https://bryangrandon.github.io/Midas-Touch/",
-    "ariaLabel": "Midas-touch",
-    "technologies": ["TS", "Astro", "Tailwind CSS"],
+    "ariaLabel": "Open Midas Touch project: landing page that supports new talent with training and mentorship",
+    "technologies": ["TS", "Astro", "TailwindCSS"],
     "highlight": true
   },
   {
     "id": 4,
     "title": "Nasa",
-    "description": "Astronomical Image of the Day: Presents each day a different image or photograph of our fascinating universe, along with a brief explanation written by a professional astronomer.",
+    "description": "NASA is a space-themed website that displays the Astronomical Image of the Day, offering a daily image of the universe accompanied by a brief explanation from an astronomer. With a modern and responsive interface, it invites users to explore cosmic phenomena in a visual and accessible way.",
     "image": {
       "src": "",
       "alt": ""
     },
     "url": "https://bryangrandon.github.io/Nasa/",
-    "ariaLabel": "link Nasa",
+    "ariaLabel": "Open Nasa project: space site displaying the Astronomical Image of the Day with a daily astronomer explanation",
     "technologies": ["React", "Vite", "Sass", "ReactIcons"],
     "highlight": false
   },
   {
     "id": 5,
-    "title": "",
-    "description": "",
+    "title": "AniDex",
+    "description": "AniDex is a website for quickly and easily searching and exploring information about anime series.",
     "image": {
       "src": "",
       "alt": ""
     },
-    "url": "https://bryangrandon.github.io//",
-    "ariaLabel": "",
+    "url": "https://bryangrandon.github.io/AniDex/",
+    "ariaLabel": "Open AniDex project: a website to search and explore anime information",
+    "technologies": ["Astro", "TailwindCSS", "TypeScript"],
+    "highlight": true
+  },
+  {
+    "id": 6,
+    "title": "Rick and Morty",
+    "description": "Rick and Morty is a website for quickly exploring characters, locations, and facts from the series in a visual way.",
+    "image": {
+      "src": "",
+      "alt": ""
+    },
+    "url": "https://bryangrandon.github.io/Rick-and-Morty/",
+    "ariaLabel": "Open Rick and Morty project: a site to explore characters and information from the series",
+    "technologies": ["React", "TypeScript", "Vite", "Sass", "ReactIcons"],
+    "highlight": false
+  },
+  {
+    "id": 7,
+    "title": "Dragon Ball",
+    "description": "Dragon Ball is a website for quickly and visually exploring characters and information from the Dragon Ball universe.",
+    "image": {
+      "src": "",
+      "alt": ""
+    },
+    "url": "https://bryangrandon.github.io/Dragon-Ball/",
+    "ariaLabel": "Open Dragon Ball project: a site to explore characters and information from the Dragon Ball universe",
+    "technologies": ["Astro", "TypeScript", "TailwindCSS"],
+    "highlight": false
+  },
+  {
+    "id": 8,
+    "title": "Free Games",
+    "description": "Free Games is a web application that provides a list of free games available on the Epic Games Store. It allows users to view game details, including images, descriptions, and links to the Epic Games Store.",
+    "image": {
+      "src": "",
+      "alt": ""
+    },
+    "url": "https://bryangrandon.github.io/Free-Games/",
+    "ariaLabel": "Open Free Games project: a site to view free games and their details",
+    "technologies": ["React", "TypeScript", "Vite", "TailwindCSS", "Vitest"],
+    "highlight": false
+  },
+  {
+    "id": 9,
+    "title": "Countries",
+    "description": "Countries is a website for quickly and visually searching and consulting data on countries around the world.",
+    "image": {
+      "src": "",
+      "alt": ""
+    },
+    "url": "https://bryangrandon.github.io/Countries/",
+    "ariaLabel": "Open Countries project: website to quickly search and view information about countries worldwide",
+    "technologies": ["React", "Vite", "Sass", "ReactIcons", "ReactRouterDom"],
+    "highlight": false
+  },
+  {
+    "id": 10,
+    "title": "Caesar-Cipher",
+    "description": "Caesar-Cipher is a web tool that encrypts and decrypts text using Caesar cipher, ideal for learning basic cryptography with a simple and accessible interface.",
+    "image": {
+      "src": "",
+      "alt": ""
+    },
+    "url": "https://bryangrandon.github.io/Caesar-Cipher/",
+    "ariaLabel": "Open Caesar-Cipher project: encrypt and decrypt text using the Caesar cipher",
     "technologies": ["React", "Vite", "Sass", "ReactIcons"],
     "highlight": false
+  },
+  {
+    "id": 11,
+    "title": "Random Color Generation",
+    "description": "Random color generator with one click. Displays color codes for quick use in design or development, with a simple and responsive interface.",
+    "image": {
+      "src": "",
+      "alt": ""
+    },
+    "url": "https://bryangrandon.github.io/Random-Color-Generation/",
+    "ariaLabel": "Open Random Color Generation project: generate random colors instantly with codes for design and development",
+    "technologies": ["React", "Vite", "Sass", "gh-pages"],
+    "highlight": false
+  },
+  {
+    "id": 13,
+    "title": "Portfolio v1",
+    "description": "Portfolio v1 is a personal website that showcases the author's web projects with a clear and responsive presentation, highlighting development technologies and skills.",
+    "image": {
+      "src": "",
+      "alt": ""
+    },
+    "url": "https://bryangrandon.github.io/Portfolio-1/",
+    "ariaLabel": "Open Portfolio v1 project: a personal website showcasing web development projects and skills.",
+    "technologies": ["React", "TypeScript", "Vite", "Sass", "Vitest"],
+    "highlight": false
+  },
+  {
+    "id": 14,
+    "title": "Brisa de Paz",
+    "description": "Brisa de Paz is website designed to showcase a catalog of fragrances and personal care products, offering an attractive visual experience and simple navigation for intuitive exploration.",
+    "image": {
+      "src": "",
+      "alt": ""
+    },
+    "url": "https://bryangrandon.github.io/Brisa-de-paz/",
+    "ariaLabel": "Open Brisa de Paz website to explore fragrances and personal care products",
+    "technologies": ["Astro", "TypeScript", "TailwindCSS", "nanostores"],
+    "highlight": true
   }
 ]
