@@ -17,11 +17,17 @@
   },
 
   "about": {
-    "title": "About",
+    "title": "About Me",
+    "subtitle": "Bryan Grandon - Junior Frontend Developer",
     "paragraph": [
-      "I am a junior frontend developer with a passion for creating aesthetically pleasing and functional web applications. With a focus on user experience and performance, I strive to deliver high quality code and innovative solutions.",
-      "I am always willing to learn and grow as a developer, and am excited to take on new challenges in the ever-evolving world of web development."
-    ]
+      "Hi! I’m a Junior Frontend Developer who enjoys crafting modern, intuitive, and visually engaging web interfaces. I love transforming ideas into smooth and responsive digital experiences, always paying attention to detail, usability, and performance.",
+      "I’m constantly learning and exploring new technologies because the web never stops evolving — and neither do I. Every project is an opportunity to grow, innovate, and deliver something better than yesterday.",
+      "I believe in clean code, creative solutions, and the power of great user experience. I’m excited to contribute, collaborate, and keep building products that people enjoy using."
+    ],
+    "img": {
+      "url": "https://files.kick.com/images/channel/2583814/banner_image/3ebbfa2a-7ad5-43e6-9d50-88fad93919d3",
+      "alt": ""
+    }
   },
   "social": {
     "github": {

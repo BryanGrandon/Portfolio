@@ -1,0 +1,40 @@
+---
+import general from '../../../content/general.json'
+const { title, subtitle, paragraph, img } = general.about
+---
+
+<article id='about' class='md:p-16 py-8'>
+  <article id='about-content' class='gap-8 max-w-350 mx-auto p-4'>
+    <picture style={{ gridArea: 'img' }} class='flex justify-center items-center'>
+      <img src={img.url} alt={img.alt} class='block object-cover rounded-2xl shadow-lg shadow-gray-600/60 max-w-100' />
+    </picture>
+
+    <section style={{ gridArea: 'title' }}>
+      <h2 class='font-basicaline font-bold text-5xl'>{title}</h2>
+      <p class='text-primary font-semibold text-shadow-xs text-shadow-gray-600/40 text-lg'>{subtitle}.</p>
+    </section>
+
+    <section class='flex flex-col gap-2' style={{ gridArea: 'text' }}>
+      {paragraph.map((text) => <p class='prose'>{text}</p>)}
+    </section>
+  </article>
+</article>
+
+<style>
+  #about-content {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-areas:
+      'img  title '
+      'img  text ';
+  }
+  @media screen and (max-width: 1024px) {
+    #about-content {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        'title'
+        'img'
+        'text';
+    }
+  }
+</style>

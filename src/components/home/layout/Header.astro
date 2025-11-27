@@ -16,11 +16,11 @@ const { title, subtitle, paragraph, img } = header
       </section>
       {paragraph.map((el) => <p class='prose'>{el}</p>)}
       <ul class='flex gap-4'>
-        <LinkIcon client:load href={social.github.url} ariaLabel={social.github.ariaLabel}><IconGithub size='2rem' slot='icon' /></LinkIcon>
-        <LinkIcon client:load href={social.linkedin.url} ariaLabel={social.linkedin.ariaLabel}><IconLinkedin size='2rem' slot='icon' /></LinkIcon>
+        <LinkIcon href={social.github.url} ariaLabel={social.github.ariaLabel}><IconGithub size='2rem' slot='icon' /></LinkIcon>
+        <LinkIcon href={social.linkedin.url} ariaLabel={social.linkedin.ariaLabel}><IconLinkedin size='2rem' slot='icon' /></LinkIcon>
       </ul>
     </section>
 
-    <img src={img.url} alt={img.alt} class='block max-w-90 object-cover rounded-3xl shadow-lg shadow-gray-600/60' />
+    <img src={img.url} alt={img.alt} class='block max-w-90 object-cover rounded-2xl shadow-lg shadow-gray-600/60' />
   </article>
 </header>
