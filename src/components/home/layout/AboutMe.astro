@@ -14,7 +14,7 @@ const { title, subtitle, paragraph, img } = general.about
       <p class='text-primary font-semibold text-shadow-xs text-shadow-gray-600/40 text-lg'>{subtitle}.</p>
     </section>
 
-    <section class='flex flex-col gap-2' style={{ gridArea: 'text' }}>
+    <section class='flex flex-col justify-center items-center lg:items-start gap-2' style={{ gridArea: 'text' }}>
       {paragraph.map((text) => <p class='prose'>{text}</p>)}
     </section>
   </article>

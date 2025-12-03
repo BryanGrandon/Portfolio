@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro'
 import Header from '../components/home/layout/Header.astro'
 import Navbar from '../components/core/layout/Navbar'
 import AboutMe from '../components/home/layout/AboutMe.astro'
+import ProjectsHighlight from '../components/home/layout/ProjectsHighlight.astro'
 ---
 
 <Layout>
@@ -12,19 +13,7 @@ import AboutMe from '../components/home/layout/AboutMe.astro'
   <main id='main'>
     <AboutMe />
 
-    <article id='projects' class='min-h-[50vh]'>
-      <h2>Projects</h2>
-      <section>
-        <section>
-          <section>
-            <h3>Title 1</h3>
-            <p>Description 1</p>
-            <p>technologies used</p>
-          </section>
-          <img src='#' alt='projectName-img' />
-        </section>
-      </section>
-    </article>
+    <ProjectsHighlight />
 
     <article id='skills' class='min-h-[50vh]'>
       <h2>Skills</h2>

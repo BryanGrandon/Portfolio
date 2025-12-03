@@ -9,7 +9,7 @@
     },
     "url": "https://bryangrandon.github.io/Color-Palette/",
     "ariaLabel": "Open Color Palette project: a web tool to generate color palettes",
-    "technologies": ["React", "TS", "Vite", "Sass", "ReactRouterDom", "Vitest", "React-Toastify", "ExtractColor"],
+    "technologies": ["React", "TypeScript", "Vite", "Sass", "React_Router", "Vitest", "React_Toastify", "Extract_Color"],
     "highlight": true
   },
   {
@@ -22,8 +22,8 @@
     },
     "url": "https://bryangrandon.github.io/Pokedex/",
     "ariaLabel": "Open Pokedex project: a web app to search and view Pokémon information",
-    "technologies": ["React", "Vite", "Sass", "ReactIcons"],
-    "highlight": true
+    "technologies": ["React", "Vite", "Sass", "React_Icons"],
+    "highlight": false
   },
   {
     "id": 3,
@@ -35,7 +35,7 @@
     },
     "url": "https://bryangrandon.github.io/Midas-Touch/",
     "ariaLabel": "Open Midas Touch project: landing page that supports new talent with training and mentorship",
-    "technologies": ["TS", "Astro", "TailwindCSS"],
+    "technologies": ["TypeScript", "Astro", "TailwindCSS"],
     "highlight": true
   },
   {
@@ -48,7 +48,7 @@
     },
     "url": "https://bryangrandon.github.io/Nasa/",
     "ariaLabel": "Open Nasa project: space site displaying the Astronomical Image of the Day with a daily astronomer explanation",
-    "technologies": ["React", "Vite", "Sass", "ReactIcons"],
+    "technologies": ["React", "Vite", "Sass", "React_Icons"],
     "highlight": false
   },
   {
@@ -74,7 +74,7 @@
     },
     "url": "https://bryangrandon.github.io/Rick-and-Morty/",
     "ariaLabel": "Open Rick and Morty project: a site to explore characters and information from the series",
-    "technologies": ["React", "TypeScript", "Vite", "Sass", "ReactIcons"],
+    "technologies": ["React", "TypeScript", "Vite", "Sass", "React_Icons"],
     "highlight": false
   },
   {
@@ -113,7 +113,7 @@
     },
     "url": "https://bryangrandon.github.io/Countries/",
     "ariaLabel": "Open Countries project: website to quickly search and view information about countries worldwide",
-    "technologies": ["React", "Vite", "Sass", "ReactIcons", "ReactRouterDom"],
+    "technologies": ["React", "Vite", "Sass", "React_Icons", "React_Router"],
     "highlight": false
   },
   {
@@ -126,7 +126,7 @@
     },
     "url": "https://bryangrandon.github.io/Caesar-Cipher/",
     "ariaLabel": "Open Caesar-Cipher project: encrypt and decrypt text using the Caesar cipher",
-    "technologies": ["React", "Vite", "Sass", "ReactIcons"],
+    "technologies": ["React", "Vite", "Sass", "React_Icons"],
     "highlight": false
   },
   {
@@ -158,7 +158,7 @@
   {
     "id": 14,
     "title": "Brisa de Paz",
-    "description": "Brisa de Paz is website designed to showcase a catalog of fragrances and personal care products, offering an attractive visual experience and simple navigation for intuitive exploration.",
+    "description": "Brisa de Paz is a website that showcases fragrances and personal care products in an attractive and easy-to-browse format.",
     "image": {
       "src": "",
       "alt": ""
