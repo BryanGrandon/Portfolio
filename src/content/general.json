@@ -30,6 +30,11 @@
       "alt": ""
     }
   },
+  "skills": {
+    "title": "Skills",
+    "subtitle": "Technologies I work with",
+    "paragraph": ["Here are some of the technologies and tools I use to create modern and efficient web applications."]
+  },
   "social": {
     "github": {
       "ariaLabel": "Open Bryan Grandon's GitHub profile.",

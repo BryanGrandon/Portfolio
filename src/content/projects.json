@@ -23,7 +23,7 @@
     "url": "https://bryangrandon.github.io/Pokedex/",
     "ariaLabel": "Open Pokedex project: a web app to search and view Pokémon information",
     "technologies": ["React", "Vite", "Sass", "React_Icons"],
-    "highlight": true
+    "highlight": false
   },
   {
     "id": 3,
@@ -49,7 +49,7 @@
     "url": "https://bryangrandon.github.io/Nasa/",
     "ariaLabel": "Open Nasa project: space site displaying the Astronomical Image of the Day with a daily astronomer explanation",
     "technologies": ["React", "Vite", "Sass", "React_Icons"],
-    "highlight": true
+    "highlight": false
   },
   {
     "id": 5,
