@@ -23,7 +23,7 @@
     "url": "https://bryangrandon.github.io/Pokedex/",
     "ariaLabel": "Open Pokedex project: a web app to search and view Pokémon information",
     "technologies": ["React", "Vite", "Sass", "React_Icons"],
-    "highlight": false
+    "highlight": true
   },
   {
     "id": 3,
@@ -41,7 +41,7 @@
   {
     "id": 4,
     "title": "Nasa",
-    "description": "NASA is a space-themed website that displays the Astronomical Image of the Day, offering a daily image of the universe accompanied by a brief explanation from an astronomer. With a modern and responsive interface, it invites users to explore cosmic phenomena in a visual and accessible way.",
+    "description": "NASA is a space-themed website that displays the Astronomy Picture of the Day alongside a brief explanation, offering a modern and visual experience for exploring the universe.",
     "image": {
       "src": "",
       "alt": ""
@@ -49,7 +49,7 @@
     "url": "https://bryangrandon.github.io/Nasa/",
     "ariaLabel": "Open Nasa project: space site displaying the Astronomical Image of the Day with a daily astronomer explanation",
     "technologies": ["React", "Vite", "Sass", "React_Icons"],
-    "highlight": false
+    "highlight": true
   },
   {
     "id": 5,

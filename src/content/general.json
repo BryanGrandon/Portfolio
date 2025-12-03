@@ -12,8 +12,9 @@
   },
 
   "project": {
-    "title": "Project",
-    "paragraph": [""]
+    "title": "Projects",
+    "subtitle": "My featured projects",
+    "paragraph": ["Here are some of my featured projects that showcase my skills and experience as a Frontend Developer."]
   },
 
   "about": {
