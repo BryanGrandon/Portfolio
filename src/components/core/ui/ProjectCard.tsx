@@ -19,7 +19,7 @@ const ProjectCard = ({ image, title, description, technologies, link, ariaLabel 
       href={link}
       target='_blank'
       aria-label={ariaLabel}
-      className='flex flex-col gap-6 p-4 rounded-lg shadow shadow-gray-600/40 bg-white/60 relative cursor-pointer hover:shadow-primary group hover:scale-101 transition-transform'
+      className='flex flex-col gap-6 p-4 rounded-lg shadow shadow-gray-600/40 bg-white/60 relative cursor-pointer hover:shadow-secondary group hover:scale-101 transition-transform'
     >
       <picture className='w-full h-50 overflow-hidden'>
         <img
@@ -29,7 +29,7 @@ const ProjectCard = ({ image, title, description, technologies, link, ariaLabel 
         />
       </picture>
 
-      <p class='absolute bottom-4 right-4 text-gray-600 hover:text-primary z-10 group-hover:text-primary group-hover:scale-110 transition-transform'>
+      <p class='absolute bottom-4 right-4 text-gray-600 hover:text-primary z-10 group-hover:text-secondary group-hover:scale-110 transition-transform'>
         <IconExternalLink />
       </p>
       <section className='flex flex-col gap-2 px-2 relative'>
