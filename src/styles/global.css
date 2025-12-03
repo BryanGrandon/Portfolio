@@ -4,7 +4,7 @@
 
 @theme {
   --color-primary: var(--primary);
-  --color-secondary: var(--color-secondary);
+  --color-secondary: var(--secondary);
   --color-underlay-dark: var(--underlay-dark);
   --color-underlay-light: var(--underlay-light);
   --font-basicaline: var(--custom-source);
