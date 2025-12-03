@@ -1,0 +1,14 @@
+---
+import { PROJECTS_HIGHLIGHT } from '../../../utils/constants/projectsData'
+import ProjectCard from '../../core/ui/ProjectCard'
+---
+
+<article id='projects' class='py-8 px-4 max-w-350 mx-auto test'>
+  <article class='flex flex-col gap-4'>
+    <h2 class='font-basicaline font-bold text-5xl'>Projects</h2>
+    <p>Highlight</p>
+    <section class='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full items-stretch'>
+      {PROJECTS_HIGHLIGHT.map((el) => <ProjectCard image={el.image} title={el.title} description={el.description} technologies={el.technologies} link={el.url} ariaLabel={el.ariaLabel} client:load />)}
+    </section>
+  </article>
+</article>
