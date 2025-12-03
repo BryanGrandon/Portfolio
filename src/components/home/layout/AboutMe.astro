@@ -1,5 +1,6 @@
 ---
 import general from '../../../content/general.json'
+import Title from '../../home/ui/Title.astro'
 const { title, subtitle, paragraph, img } = general.about
 ---
 
@@ -10,8 +11,7 @@ const { title, subtitle, paragraph, img } = general.about
     </picture>
 
     <section style={{ gridArea: 'title' }}>
-      <h2 class='font-basicaline font-bold text-5xl'>{title}</h2>
-      <p class='text-primary font-semibold text-shadow-xs text-shadow-gray-600/40 text-lg'>{subtitle}.</p>
+      <Title title={title} subtitle={subtitle} />
     </section>
 
     <section class='flex flex-col justify-center items-center lg:items-start gap-2' style={{ gridArea: 'text' }}>

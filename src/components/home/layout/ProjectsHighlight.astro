@@ -1,12 +1,25 @@
 ---
 import { PROJECTS_HIGHLIGHT } from '../../../utils/constants/projectsData'
 import ProjectCard from '../../core/ui/ProjectCard'
+import general from '../../../content/general.json'
+import Title from '../../home/ui/Title.astro'
+const { title, subtitle, paragraph } = general.project
 ---
 
-<article id='projects' class='py-8 px-4 max-w-350 mx-auto test'>
+<article id='projects' class='py-8 px-4 max-w-350 mx-auto'>
   <article class='flex flex-col gap-4'>
-    <h2 class='font-basicaline font-bold text-5xl'>Projects</h2>
-    <p>Highlight</p>
+    <section>
+      <Title title={title} subtitle={subtitle} />
+    </section>
+    <section class='relative'>
+      {paragraph.map((text) => <p class='prose'>{text}</p>)}
+    </section>
+    <section class='flex justify-end'>
+      <a href='/all_projects' class='shadow shadow-gray-600/40 px-4 py-1 rounded-lg bg-primary/40 hover:bg-primary hover:text-white hover:scale-102 active:scale-95 transition-all duration-250'
+        >More Projects</a
+      >
+    </section>
+
     <section class='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full items-stretch'>
       {PROJECTS_HIGHLIGHT.map((el) => <ProjectCard image={el.image} title={el.title} description={el.description} technologies={el.technologies} link={el.url} ariaLabel={el.ariaLabel} client:load />)}
     </section>

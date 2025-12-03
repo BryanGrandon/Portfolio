@@ -1,0 +1,12 @@
+---
+type title = {
+  title: string
+  subtitle: string
+}
+const { title, subtitle } = Astro.props as title
+---
+
+<>
+  <h2 class='font-basicaline font-bold text-5xl'>{title}</h2>
+  <p class='text-primary font-semibold text-shadow-xs text-shadow-gray-600/40 text-lg'>{subtitle}.</p>
+</>
