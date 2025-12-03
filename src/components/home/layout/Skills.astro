@@ -1,0 +1,23 @@
+---
+import general from '../../../content/general.json'
+import { AllIconsStackFronted, AllIconsStackTools } from '../../core/icons/IconStack'
+import Title from '../../home/ui/Title.astro'
+import StackCard from '../ui/StackCard.astro'
+const { title, subtitle, paragraph } = general.skills
+---
+
+<article id='skills' class='pt-16 pb-8'>
+  <article class='grid grid-cols-1 lg:grid-cols-2 gap-4 max-w-350 mx-auto py-8 px-4'>
+    <article>
+      <Title title={title} subtitle={subtitle} />
+      <section class='relative'>
+        {paragraph.map((text) => <p class='prose'>{text}</p>)}
+      </section>
+    </article>
+
+    <article class='grid grid-cols-1 md:grid-cols-2 gap-4'>
+      <StackCard title='Frontend'><AllIconsStackFronted theClass='h-10' slot='stack' /></StackCard>
+      <StackCard title='Tools'><AllIconsStackTools theClass='h-10' slot='stack' /></StackCard>
+    </article>
+  </article>
+</article>
