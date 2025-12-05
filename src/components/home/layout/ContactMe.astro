@@ -1,0 +1,23 @@
+---
+import Title from '../../home/ui/Title.astro'
+import general from '../../../content/general.json'
+import ContactInfo from '../ui/ContactInfo.astro'
+import { IconClock, IconEmail, IconTimeZone } from '../../core/icons/IconContactMe'
+const { title, subtitle, paragraph } = general.contacts
+---
+
+<article id='contact' class='pt-16 pb-8'>
+  <article class='flex flex-col gap-8 max-w-350 mx-auto py-8 px-4'>
+    <article class='col-span-2'>
+      <Title title={title} subtitle={subtitle} />
+      <section>
+        {paragraph.map((text) => <p class='prose'>{text}</p>)}
+      </section>
+    </article>
+    <article class='flex gap-4'>
+      <ContactInfo title='Email' text='bryan.@gmail.com'><IconEmail slot='icon' /></ContactInfo>
+      <ContactInfo title='Hours of operation' text='9:00 a.m. - 18:00 p.m'><IconClock slot='icon' /></ContactInfo>
+      <ContactInfo title='Time Zone' text='GMT-3'><IconTimeZone slot='icon' /></ContactInfo>
+    </article>
+  </article>
+</article>

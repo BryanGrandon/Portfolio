@@ -7,7 +7,7 @@ const { title, subtitle, paragraph } = general.skills
 ---
 
 <article id='skills' class='pt-16 pb-8'>
-  <article class='grid grid-cols-1 lg:grid-cols-2 gap-4 max-w-350 mx-auto py-8 px-4'>
+  <article class='grid grid-cols-1 gap-4 max-w-350 mx-auto py-8 px-4'>
     <article>
       <Title title={title} subtitle={subtitle} />
       <section class='relative'>
@@ -15,7 +15,7 @@ const { title, subtitle, paragraph } = general.skills
       </section>
     </article>
 
-    <article class='grid grid-cols-1 md:grid-cols-2 gap-4'>
+    <article class='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4'>
       <StackCard title='Frontend'><AllIconsStackFronted theClass='h-10' slot='stack' /></StackCard>
       <StackCard title='Tools'><AllIconsStackTools theClass='h-10' slot='stack' /></StackCard>
     </article>

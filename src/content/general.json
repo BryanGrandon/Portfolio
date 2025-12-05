@@ -35,6 +35,11 @@
     "subtitle": "Technologies I work with",
     "paragraph": ["Here are some of the technologies and tools I use to create modern and efficient web applications."]
   },
+  "contacts": {
+    "title": "Contact Me",
+    "subtitle": "Get in touch",
+    "paragraph": ["I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions. Feel free to reach out to me through any of the platforms below."]
+  },
   "social": {
     "github": {
       "ariaLabel": "Open Bryan Grandon's GitHub profile.",
