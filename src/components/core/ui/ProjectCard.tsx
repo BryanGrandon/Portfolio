@@ -19,14 +19,14 @@ const ProjectCard = ({ image, title, description, technologies, link, ariaLabel 
       href={link}
       target='_blank'
       aria-label={ariaLabel}
-      className='flex flex-col gap-6 p-4 rounded-lg shadow shadow-gray-600/40 bg-white/60 relative cursor-pointer hover:shadow-secondary/80 group'
+      className='flex flex-col gap-6 p-4 rounded-lg shadow shadow-gray-600/40 bg-white/60 dark:bg-black/60 relative cursor-pointer hover:shadow-secondary/80 group'
       title={ariaLabel}
     >
       <picture className='w-full h-35 overflow-hidden rounded-lg'>
         <img src={image.src} alt={image.alt} className='h-full w-full shadow shadow-gray-600/40 object-cover  transition-transform' />
       </picture>
 
-      <p class='absolute bottom-4 right-4 text-gray-600 hover:text-primary z-10 group-hover:text-secondary group-hover:scale-110 transition-transform'>
+      <p class='absolute bottom-4 right-4 text-gray-600 dark:text-gray-200 hover:text-primary z-10 group-hover:text-secondary group-hover:scale-110 transition-transform'>
         <IconExternalLink />
       </p>
       <section className='flex flex-col gap-2 px-2 relative'>
@@ -34,7 +34,7 @@ const ProjectCard = ({ image, title, description, technologies, link, ariaLabel 
           <h3 className='text-3xl font-basicaline font-semibold'>{title}</h3>
           <sup className='block h-0.5 rounded bg-primary group-hover:bg-secondary '></sup>
         </div>
-        <p className='prose'>{description}</p>
+        <p className='prose dark:prose-invert'>{description}</p>
         <section>
           {techList.map((tech) => (
             <img src={tech.img} alt={tech.alt} className='inline-block mr-2 mb-2' />

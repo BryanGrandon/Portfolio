@@ -7,10 +7,16 @@
 }
 
 :root {
-  --primary: #ff411d;
   --primary: #4e40de;
   --secondary: #b21813;
   --custom-source: 'Basicaline', sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary: #ff4500;
+    --secondary: #00b9ff;
+  }
 }
 
 :root {

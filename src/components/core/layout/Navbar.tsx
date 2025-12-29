@@ -26,7 +26,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav id='navbar' className='block fixed top-0 inset-x-0 bg-white/60 transition-transform duration-350 translate-0 backdrop-blur-xl z-20 '>
+      <nav id='navbar' className='block fixed top-0 inset-x-0 bg-white/60 dark:bg-black/60 transition-transform duration-350 translate-0 backdrop-blur-xl z-20 '>
         <section className='flex justify-between items-center max-w-350 mx-auto p-4'>
           <a href='/' className='font-basicaline text-xl'>
             Dev.

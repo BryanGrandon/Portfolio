@@ -7,20 +7,20 @@ import IconBackUp from '../components/core/icons/IconBackUp'
 ---
 
 <Layout>
-  <header class='bg-white/60 shadow shadow-gray-600/40 p-4 rounded-lg'>
-    <article class='max-w-350 mx-auto'>
-      <a href='/#projects' class='hover:text-primary' aria-label='Go back to home page' title='Go back to home page'>
+  <header class='bg-white/60 dark:bg-black/60 shadow shadow-primary p-2 fixed w-full top-0 z-10 backdrop-blur-xl'>
+    <article class='max-w-350 mx-auto flex items-center justify-start'>
+      <a href='/#projects' class='hover:text-primary p-2' aria-label='Go back to home page' title='Go back to home page'>
         <IconBackUp size='2rem' />
       </a>
     </article>
   </header>
 
-  <main class='max-w-350 mx-auto py-12 px-4 flex flex-col gap-8'>
+  <main class='max-w-350 mx-auto py-12 pt-25 px-4 flex flex-col gap-8'>
     <header class='flex flex-col gap-2'>
       <section>
         <Title title='All projects' subtitle='Explore Projects' />
       </section>
-      <p class='prose'>The projects are listed alphabetically by name and not according to their relevance, popularity, or importance.</p>
+      <p class='prose dark:prose-invert'>The projects are listed alphabetically by name and not according to their relevance, popularity, or importance.</p>
     </header>
 
     <article class='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4'>
