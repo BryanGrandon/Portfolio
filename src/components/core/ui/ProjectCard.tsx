@@ -15,13 +15,9 @@ const ProjectCard = ({ image, title, description, technologies, link, ariaLabel 
   const techList = getTechnologies(technologies)
 
   return (
-    <a href={link} target='_blank' aria-label={ariaLabel} className='flex flex-col gap-6 p-4 rounded-lg shadow shadow-gray-600/40 bg-white/60 relative cursor-pointer hover:shadow-primary/40 group'>
+    <a href={link} target='_blank' aria-label={ariaLabel} className='flex flex-col gap-6 p-4 rounded-lg shadow shadow-gray-600/40 bg-white/60 relative cursor-pointer hover:shadow-secondary/80 group'>
       <picture className='w-full h-35 overflow-hidden rounded-lg'>
-        <img
-          src='https://avatars.mds.yandex.net/i?id=7ad36af4f5b3ee0cfaaa7bcf47dfd5e3_l-5315965-images-thumbs&ref=rim&n=13&w=3000&h=1687'
-          alt={image.alt}
-          className='h-full w-full shadow shadow-gray-600/40 object-cover group-hover:scale-105 transition-transform'
-        />
+        <img src={image.src} alt={image.alt} className='h-full w-full shadow shadow-gray-600/40 object-cover  transition-transform' />
       </picture>
 
       <p class='absolute bottom-4 right-4 text-gray-600 hover:text-primary z-10 group-hover:text-secondary group-hover:scale-110 transition-transform'>
@@ -30,7 +26,7 @@ const ProjectCard = ({ image, title, description, technologies, link, ariaLabel 
       <section className='flex flex-col gap-2 px-2 relative'>
         <div className='w-fit'>
           <h3 className='text-3xl font-basicaline font-semibold'>{title}</h3>
-          <sup className='block h-0.5 rounded bg-primary'></sup>
+          <sup className='block h-0.5 rounded bg-primary group-hover:bg-secondary '></sup>
         </div>
         <p className='prose'>{description}</p>
         <section>
