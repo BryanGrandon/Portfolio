@@ -33,7 +33,7 @@ const Navbar = () => {
           </a>
           <section className='hidden md:flex gap-4 capitalize '>
             {NAVIGATION.map((el) => (
-              <a key={el.id} href={el.url} className={selected == el.nav.toLowerCase() ? 'border-b-2 border-primary' : ''}>
+              <a key={el.id} href={el.url} className={` hover:text-primary ${selected == el.nav.toLowerCase() ? 'border-b-2 border-primary' : ''}`}>
                 {el.nav}
               </a>
             ))}

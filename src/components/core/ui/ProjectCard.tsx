@@ -15,7 +15,13 @@ const ProjectCard = ({ image, title, description, technologies, link, ariaLabel 
   const techList = getTechnologies(technologies)
 
   return (
-    <a href={link} target='_blank' aria-label={ariaLabel} className='flex flex-col gap-6 p-4 rounded-lg shadow shadow-gray-600/40 bg-white/60 relative cursor-pointer hover:shadow-secondary/80 group'>
+    <a
+      href={link}
+      target='_blank'
+      aria-label={ariaLabel}
+      className='flex flex-col gap-6 p-4 rounded-lg shadow shadow-gray-600/40 bg-white/60 relative cursor-pointer hover:shadow-secondary/80 group'
+      title={ariaLabel}
+    >
       <picture className='w-full h-35 overflow-hidden rounded-lg'>
         <img src={image.src} alt={image.alt} className='h-full w-full shadow shadow-gray-600/40 object-cover  transition-transform' />
       </picture>
