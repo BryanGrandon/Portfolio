@@ -1,9 +1,9 @@
 ---
-import { PROJECTS_HIGHLIGHT } from '../../../utils/constants/projectsData'
-import Title from '../../home/ui/Title.astro'
+import Title from '../../core/ui/Title.astro'
 import ProjectCard from '../../core/ui/ProjectCard'
-import general from '../../../content/general.json'
-const { title, subtitle, paragraph } = general.project
+import { PROJECTS_HIGHLIGHT } from '../../../utils/constants/projects'
+import { WEBSITE_PROJECTS } from '../../../utils/constants/website'
+const { title, subtitle, paragraph } = WEBSITE_PROJECTS
 ---
 
 <article id='projects' class='pt-12 pb-8'>

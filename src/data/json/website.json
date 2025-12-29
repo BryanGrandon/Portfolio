@@ -1,0 +1,63 @@
+{
+  "header": {
+    "title": "Welcome to My Portfolio",
+    "subtitle": "Showcasing My Work and Skills",
+    "paragraph": ["Explore my projects, skills, and experiences as a Frontend Developer. I'm passionate about creating beautiful and functional web applications."],
+    "img": {
+      "url": "/images/other/avatar.png",
+      "alt": "Avatar of Bryan Grandon"
+    }
+  },
+
+  "projects": {
+    "title": "Projects",
+    "subtitle": "Featured Works",
+    "paragraph": ["Discover some of my standout projects that highlight my expertise and creativity in frontend development."]
+  },
+
+  "all_projects": {
+    "title": "All Projects",
+    "subtitle": "Explore More of My Work",
+    "paragraph": [
+      "Take a look at all the projects I've worked on, showcasing a variety of skills and technologies.",
+      "The projects are listed alphabetically by name and not according to their relevance, popularity, or importance."
+    ]
+  },
+
+  "about_me": {
+    "title": "About Me",
+    "subtitle": "Bryan Grandon - Junior Frontend Developer",
+    "paragraph": [
+      "Junior frontend developer focused on creating modern, user-friendly web interfaces and turning ideas into seamless digital experiences.",
+      "Committed to continuous learning and growth. Each project represents a new opportunity for growth, innovation, and improvement.",
+      "Constantly improving to develop quality code, tackle challenges creatively, and create engaging user experiences."
+    ],
+    "img": {
+      "url": "/images/other/avatar.png",
+      "alt": "Avatar of Bryan Grandon"
+    }
+  },
+
+  "skills": {
+    "title": "Skills",
+    "subtitle": "Technologies I Work With",
+    "paragraph": ["Here are some of the technologies and tools I utilize to build efficient and modern web applications."]
+  },
+
+  "contact": {
+    "title": "Contact Me",
+    "subtitle": "Get in Touch",
+    "paragraph": ["I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions. Feel free to reach out to me through any of the platforms below."]
+  },
+
+  "social": {
+    "github": {
+      "ariaLabel": "Open Bryan Grandon's GitHub profile.",
+      "url": "https://github.com/BryanGrandon"
+    },
+    "linkedin": {
+      "ariaLabel": "Open Bryan Grandon's LinkedIn profile.",
+      "url": "https://www.linkedin.com/in/bryan-grandon/"
+    }
+  }
+}

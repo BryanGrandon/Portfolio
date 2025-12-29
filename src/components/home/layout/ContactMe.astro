@@ -1,9 +1,9 @@
 ---
-import Title from '../../home/ui/Title.astro'
-import general from '../../../content/general.json'
+import Title from '../../core/ui/Title.astro'
 import ContactInfo from '../ui/ContactInfo.astro'
 import { IconClock, IconEmail, IconTimeZone } from '../../core/icons/IconContactMe'
-const { title, subtitle, paragraph } = general.contacts
+import { WEBSITE_CONTACT } from '../../../utils/constants/website'
+const { title, subtitle, paragraph } = WEBSITE_CONTACT
 ---
 
 <article id='contact' class='pt-12 pb-8'>

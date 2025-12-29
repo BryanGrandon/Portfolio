@@ -1,9 +1,11 @@
 ---
 import Layout from '../layouts/Layout.astro'
+import Title from '../components/core/ui/Title.astro'
 import ProjectCard from '../components/core/ui/ProjectCard'
-import { ALL_PROJECTS } from '../utils/constants/projectsData'
-import Title from '../components/home/ui/Title.astro'
 import IconBackUp from '../components/core/icons/IconBackUp'
+import { ALL_PROJECTS } from '../utils/constants/projects'
+import { WEBSITE_ALL_PROJECTS } from '../utils/constants/website'
+const { title, subtitle, paragraph } = WEBSITE_ALL_PROJECTS
 ---
 
 <Layout>
@@ -18,9 +20,9 @@ import IconBackUp from '../components/core/icons/IconBackUp'
   <main class='max-w-350 mx-auto py-12 pt-25 px-4 flex flex-col gap-8'>
     <header class='flex flex-col gap-2'>
       <section>
-        <Title title='All projects' subtitle='Explore Projects' />
+        <Title title={title} subtitle={subtitle} />
       </section>
-      <p class='prose dark:prose-invert'>The projects are listed alphabetically by name and not according to their relevance, popularity, or importance.</p>
+      {paragraph.map((text) => <p class='prose dark:prose-invert'>{text}</p>)}
     </header>
 
     <article class='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4'>

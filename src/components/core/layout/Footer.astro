@@ -1,10 +1,9 @@
 ---
-import general from '../../../content/general.json'
 import { NAVIGATION } from '../../../utils/constants/navigation'
+import { WEBSITE_SOCIAL } from '../../../utils/constants/website'
 import IconGithub from '../icons/IconGithub'
 import IconLinkedin from '../icons/IconLinkedin'
 import LinkIcon from '../ui/LinkIcon.astro'
-const { social } = general
 ---
 
 <footer class='bg-gray-300/40 dark:bg-black/40 border-t-2 border-primary backdrop-blur-md'>
@@ -13,10 +12,10 @@ const { social } = general
       <h3 class='text-xl font-basicaline font-semibold'>BG Code.</h3>
       <section>
         <ul class='flex gap-4'>
-          <LinkIcon href={social.github.url} ariaLabel={social.github.ariaLabel}>
+          <LinkIcon href={WEBSITE_SOCIAL.github.url} ariaLabel={WEBSITE_SOCIAL.github.ariaLabel}>
             <IconGithub size='2rem' slot='icon' />
           </LinkIcon>
-          <LinkIcon href={social.linkedin.url} ariaLabel={social.linkedin.ariaLabel}>
+          <LinkIcon href={WEBSITE_SOCIAL.linkedin.url} ariaLabel={WEBSITE_SOCIAL.linkedin.ariaLabel}>
             <IconLinkedin size='2rem' slot='icon' />
           </LinkIcon>
         </ul>

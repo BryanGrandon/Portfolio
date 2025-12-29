@@ -1,11 +1,10 @@
 ---
-import general from '../../../content/general.json'
+import Title from '../../core/ui/Title.astro'
 import IconGithub from '../../core/icons/IconGithub'
 import IconLinkedin from '../../core/icons/IconLinkedin'
 import LinkIcon from '../../core/ui/LinkIcon.astro'
-import Title from '../../home/ui/Title.astro'
-const { header, social } = general
-const { title, subtitle, paragraph, img } = header
+import { WEBSITE_HEADER, WEBSITE_SOCIAL } from '../../../utils/constants/website'
+const { title, subtitle, paragraph, img } = WEBSITE_HEADER
 ---
 
 <header id='home' class='bg-white/60 dark:bg-black/40 backdrop-blur-md border-b-2 border-primary min-h-screen flex items-center'>
@@ -16,8 +15,8 @@ const { title, subtitle, paragraph, img } = header
       </section>
       {paragraph.map((el) => <p class='prose dark:prose-invert'>{el}</p>)}
       <ul class='flex gap-4'>
-        <LinkIcon href={social.github.url} ariaLabel={social.github.ariaLabel}><IconGithub size='2rem' slot='icon' /></LinkIcon>
-        <LinkIcon href={social.linkedin.url} ariaLabel={social.linkedin.ariaLabel}><IconLinkedin size='2rem' slot='icon' /></LinkIcon>
+        <LinkIcon href={WEBSITE_SOCIAL.github.url} ariaLabel={WEBSITE_SOCIAL.github.ariaLabel}><IconGithub size='2rem' slot='icon' /></LinkIcon>
+        <LinkIcon href={WEBSITE_SOCIAL.linkedin.url} ariaLabel={WEBSITE_SOCIAL.linkedin.ariaLabel}><IconLinkedin size='2rem' slot='icon' /></LinkIcon>
       </ul>
     </section>
 
