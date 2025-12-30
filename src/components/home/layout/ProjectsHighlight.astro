@@ -3,6 +3,7 @@ import Title from '../../core/ui/Title.astro'
 import ProjectCard from '../../core/ui/ProjectCard'
 import { PROJECTS_HIGHLIGHT } from '../../../utils/constants/projects'
 import { WEBSITE_PROJECTS } from '../../../utils/constants/website'
+import { NAVIGATION_PAGE } from '../../../utils/constants/navigation'
 const { title, subtitle, paragraph } = WEBSITE_PROJECTS
 ---
 
@@ -17,7 +18,10 @@ const { title, subtitle, paragraph } = WEBSITE_PROJECTS
       {PROJECTS_HIGHLIGHT.map((el) => <ProjectCard image={el.image} title={el.title} description={el.description} technologies={el.technologies} link={el.url} ariaLabel={el.ariaLabel} client:load />)}
     </section>
     <section class='flex justify-end'>
-      <a href='/all_projects' class='shadow shadow-gray-800/70 px-4 py-1 rounded-lg bg-primary/40 hover:bg-primary hover:text-white hover:scale-102 active:scale-95 transition-all duration-250'>
+      <a
+        href={NAVIGATION_PAGE.all_projects}
+        class='shadow shadow-gray-800/70 px-4 py-1 rounded-lg bg-primary/40 hover:bg-primary hover:text-white hover:scale-102 active:scale-95 transition-all duration-250'
+      >
         More Projects
       </a>
     </section>

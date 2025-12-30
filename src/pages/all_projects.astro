@@ -5,13 +5,14 @@ import ProjectCard from '../components/core/ui/ProjectCard'
 import IconBackUp from '../components/core/icons/IconBackUp'
 import { ALL_PROJECTS } from '../utils/constants/projects'
 import { WEBSITE_ALL_PROJECTS } from '../utils/constants/website'
+import { NAVIGATION_PAGE } from '../utils/constants/navigation'
 const { title, subtitle, paragraph } = WEBSITE_ALL_PROJECTS
 ---
 
 <Layout>
   <header class='bg-white/60 dark:bg-black/60 shadow shadow-primary p-2 fixed w-full top-0 z-10 backdrop-blur-xl'>
     <article class='max-w-350 mx-auto flex items-center justify-start'>
-      <a href='/#projects' class='hover:text-primary p-2' aria-label='Go back to home page' title='Go back to home page'>
+      <a href={NAVIGATION_PAGE.home + '#projects'} class='hover:text-primary p-2' aria-label='Go back to home page' title='Go back to home page'>
         <IconBackUp size='2rem' />
       </a>
     </article>

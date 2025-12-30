@@ -32,4 +32,9 @@ const NAVIGATION = [
   },
 ]
 
-export { NAVIGATION }
+const NAVIGATION_PAGE = {
+  home: '/Portfolio/',
+  all_projects: '/Portfolio/all_projects',
+}
+
+export { NAVIGATION, NAVIGATION_PAGE }
