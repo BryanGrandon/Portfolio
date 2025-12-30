@@ -4,7 +4,7 @@
     "subtitle": "Showcasing My Work and Skills",
     "paragraph": ["Explore my projects, skills, and experiences as a Frontend Developer. I'm passionate about creating beautiful and functional web applications."],
     "img": {
-      "url": "/images/other/avatar.png",
+      "url": "./Portfolio/images/other/avatar.webp",
       "alt": "Avatar of Bryan Grandon"
     }
   },
@@ -33,7 +33,7 @@
       "Constantly improving to develop quality code, tackle challenges creatively, and create engaging user experiences."
     ],
     "img": {
-      "url": "/images/other/avatar.png",
+      "url": "./Portfolio/images/other/avatar.webp",
       "alt": "Avatar of Bryan Grandon"
     }
   },
