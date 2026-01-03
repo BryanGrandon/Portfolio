@@ -8,7 +8,7 @@ const { title, subtitle, paragraph, img } = WEBSITE_HEADER
 ---
 
 <header id='home' class='bg-white/60 dark:bg-black/40 backdrop-blur-md border-b-2 border-primary min-h-screen flex items-center'>
-  <article class='flex flex-col-reverse lg:flex-row items-center p-4 gap-8 max-w-350 mx-auto h-screen justify-evenly'>
+  <article class='flex flex-col-reverse lg:flex-row items-center p-4 pt-10 gap-8 max-w-350 mx-auto h-screen justify-evenly'>
     <section class='flex flex-col gap-4'>
       <section>
         <Title title={title} subtitle={subtitle} />
@@ -20,6 +20,6 @@ const { title, subtitle, paragraph, img } = WEBSITE_HEADER
       </ul>
     </section>
 
-    <img src={img.url} alt={img.alt} class='block max-w-80 object-cover rounded-full shadow-lg shadow-gray-700/40' />
+    <img src={img.url} alt={img.alt} class='block max-w-70 md:max-w-80 object-cover rounded-full shadow-lg shadow-gray-700/40' />
   </article>
 </header>

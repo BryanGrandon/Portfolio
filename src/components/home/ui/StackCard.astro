@@ -6,7 +6,7 @@ type stackCard = {
 const { title } = Astro.props as stackCard
 ---
 
-<section class='rounded-lg overflow-hidden shadow shadow-gray-600/40 dark:shadow-gray-300/20 bg-white/60 dark:bg-black/60'>
+<section class='rounded-lg overflow-hidden shadow shadow-gray-600/40 dark:shadow-gray-300/20 bg-white/60 dark:bg-black/60 backdrop-blur-md border border-gray-200 dark:border-gray-400'>
   <h2 class='font-basicaline font-semibold text-2xl text-center p-2 bg-primary tracking-wider text-white'>{title}</h2>
   <section class='grid grid-cols-4 items-center justify-items-center p-4 gap-4'>
     <slot name='stack' />

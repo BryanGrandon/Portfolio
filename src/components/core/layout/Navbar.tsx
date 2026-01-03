@@ -42,14 +42,14 @@ const Navbar = () => {
             <HamburgerMenuAnimation />
           </button>
         </section>
-        <article id='menu-movil' class='fixed right-2 top-15 bg-underlay-light z-10 h-fit transition-transform duration-650 -translate-y-100'>
-          <section class='flex flex-col justify-center rounded-xl overflow-hidden shadow shadow-gray-600 min-w-60'>
+        <article id='menu-movil' class='fixed right-2 top-15 rounded-xl overflow-hidden bg-underlay-light dark:bg-underlay-dark z-10 h-fit transition-transform duration-650 -translate-y-100'>
+          <section class='flex flex-col justify-center  shadow shadow-gray-600 dark:shadow-gray-100 min-w-60'>
             {NAVIGATION.map((el) => (
               <a
                 onClick={clickOpenAndCloseMenu}
                 key={el.id}
                 href={el.url}
-                className={`navigation-link text-center p-4 font-xl capitalize font-semibold ${selected == el.nav.toLowerCase() ? 'bg-primary text-white' : ''}`}
+                className={`navigation-link text-center p-4 font-xl capitalize font-semibold hover:text-secondary ${selected == el.nav.toLowerCase() ? 'bg-primary text-white' : ''}`}
               >
                 {el.nav}
               </a>
