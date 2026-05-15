@@ -36,7 +36,7 @@
     "url": "https://bryangrandon.github.io/Midas-Touch/",
     "ariaLabel": "Open Midas Touch project: landing page that supports new talent with training and mentorship",
     "technologies": ["TypeScript", "Astro", "TailwindCSS"],
-    "highlight": true
+    "highlight": false
   },
   {
     "id": 4,
@@ -166,6 +166,19 @@
     "url": "https://bryangrandon.github.io/Brisa-de-paz/",
     "ariaLabel": "Open Brisa de Paz website to explore fragrances and personal care products",
     "technologies": ["Astro", "TypeScript", "TailwindCSS", "nanostores"],
+    "highlight": true
+  },
+  {
+    "id": 15,
+    "title": "Flag Quiz",
+    "description": "Interactive geography quiz game where players guess countries by their flags through multiple game modes.",
+    "image": {
+      "src": "/Portfolio/images/projects/flag-quiz.webp",
+      "alt": "Flag Quiz game preview"
+    },
+    "url": "https://bryangrandon.github.io/Flag-Quiz/",
+    "ariaLabel": "Visit Flag Quiz project",
+    "technologies": ["TypeScript", "TailwindCSS", "Vite", "React"],
     "highlight": true
   }
 ]
