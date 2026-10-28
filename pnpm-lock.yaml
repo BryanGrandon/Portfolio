@@ -17,9 +17,15 @@ importers:
       astro:
         specifier: ^7.4.2
         version: 7.4.2(@types/node@26.6.5)(jiti@2.7.0)(yaml@2.9.1)
+      lucide-preact:
+        specifier: ^1.62.0
+        version: 1.62.0(preact@10.29.8)
       preact:
         specifier: ^10.29.8
         version: 10.29.8(preact-render-to-string@6.8.2)
+      tailwind-merge:
+        specifier: ^3.7.0
+        version: 3.7.0
       tailwindcss:
         specifier: 4.1.17
         version: 4.1.17
@@ -1559,6 +1565,11 @@ packages:
   lru-cache@5.1.1:
     resolution: {integrity: sha512-KpNARQA3Iwv+jTA0utUVVbrh+Jlrr1Fv0e56GGzAFOXN7dk/FviaDW8LHmK52DlcH4WP2n6gI8vN1aesBFgo9w==}
 
+  lucide-preact@1.62.0:
+    resolution: {integrity: sha512-m2rePkaktG4gJU89FiAkoh7gFYRuN6HjU/QLWlqqE50NCCX/H7eTS9zJX5dBcQzKhN1TWXV4gWYhYAKAWkUX7g==}
+    peerDependencies:
+      preact: ^10.27.2 || ^11.0.0-0
+
   magic-string@0.30.21:
     resolution: {integrity: sha512-vd2F4YUyEXKGcLHoq+TEyCjxueSeHnFxyyjNp80yg0XV4vUhnDer/lvvlqM/arB5bXQN5K2/3oinyCRyx8T2CQ==}
 
@@ -1801,6 +1812,9 @@ packages:
     resolution: {integrity: sha512-bkxnTg1kSU0guhIBmibA6UUhrQmPVA1XsQLN+ylCd+UWzbnLkySOcXpyk1mrl05f+pcaCx2eHb+sp6BgMZWX+Q==}
     engines: {node: '>=16'}
     hasBin: true
+
+  tailwind-merge@3.7.0:
+    resolution: {integrity: sha512-XPPUyAc+cvspz3lHTcR/QgPfW2A0lv/xQNIjX3HGhLR+Nq2lHaLq5MtTesHn8GUr3W3DguT2KT5x3NVgRtYwmA==}
 
   tailwindcss@4.1.17:
     resolution: {integrity: sha512-j9Ee2YjuQqYT9bbRTfTZht9W/ytp5H+jJpZKiYdP/bpnXARAuELt9ofP0lPnmHjbga7SNQIxdTAXCmtKVYjN+Q==}
@@ -3419,6 +3433,10 @@ snapshots:
     dependencies:
       yallist: 3.1.1
 
+  lucide-preact@1.62.0(preact@10.29.8):
+    dependencies:
+      preact: 10.29.8(preact-render-to-string@6.8.2)
+
   magic-string@0.30.21:
     dependencies:
       '@jridgewell/sourcemap-codec': 1.6.0
@@ -3733,6 +3751,8 @@ snapshots:
       csso: 5.0.5
       picocolors: 1.1.1
       sax: 1.6.1
+
+  tailwind-merge@3.7.0: {}
 
   tailwindcss@4.1.17: {}
 
