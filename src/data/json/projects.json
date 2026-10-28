@@ -9,7 +9,16 @@
     },
     "url": "https://bryangrandon.github.io/Color-Palette/",
     "ariaLabel": "Open Color Palette project: a web tool to generate color palettes",
-    "technologies": ["React", "TypeScript", "Vite", "Sass", "React_Router", "Vitest", "React_Toastify", "Extract_Color"],
+    "technologies": [
+      "React",
+      "TypeScript",
+      "Vite",
+      "Sass",
+      "React_Router",
+      "Vitest",
+      "React_Toastify",
+      "Extract_Color"
+    ],
     "highlight": true
   },
   {
@@ -36,7 +45,7 @@
     "url": "https://bryangrandon.github.io/Midas-Touch/",
     "ariaLabel": "Open Midas Touch project: landing page that supports new talent with training and mentorship",
     "technologies": ["TypeScript", "Astro", "TailwindCSS"],
-    "highlight": false
+    "highlight": true
   },
   {
     "id": 4,
@@ -62,7 +71,7 @@
     "url": "https://bryangrandon.github.io/AniDex/",
     "ariaLabel": "Open AniDex project: a website to search and explore anime information",
     "technologies": ["Astro", "TailwindCSS", "TypeScript"],
-    "highlight": true
+    "highlight": false
   },
   {
     "id": 6,

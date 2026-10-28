@@ -1,19 +1,17 @@
-@import url('./root.css');
-
 html {
   scroll-behavior: smooth;
   ::-webkit-scrollbar {
     width: 0.2rem;
-    height: 0.3rem;
+    height: 0.1rem;
   }
   ::-webkit-scrollbar-thumb {
-    background: var(--primary);
+    background: var(--color-brand);
     border-radius: 100vw;
   }
   ::-webkit-scrollbar-track {
-    margin-block: 0.1rem;
+    /* margin-block: 0.1rem; */
     margin-inline: 0.1rem;
-    background: var(--bg-selection);
+    background: var(--color-selection);
   }
   ::-webkit-scrollbar-corner {
     display: none;
@@ -21,29 +19,41 @@ html {
 
   /* selection */
   ::-moz-selection {
-    background-color: var(--bg-selection);
-    color: var(--primary);
+    background-color: var(--color-selection);
+    color: var(--color-brand);
   }
   ::selection {
-    background-color: var(--bg-selection);
-    color: var(--primary);
+    background-color: var(--color-selection);
+    color: var(--color-brand);
   }
   scrollbar-gutter: stable;
 }
 
 body {
-  color: var(--underlay-dark);
-  background-color: var(--underlay-light);
-  font-family: var(--main-source);
+  color: var(--color-text);
+  background-color: var(--background);
+  font-family: var(--font-body);
+  font-size: 16px;
   display: grid;
   min-height: 100dvh;
   grid-template-rows: auto 1fr auto;
 }
 
-/* We adapt them to the dark mode.  */
-@media (prefers-color-scheme: dark) {
-  body {
-    color: var(--underlay-light);
-    background-color: var(--underlay-dark);
-  }
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+}
+
+h1 {
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  line-height: 1.2;
+}
+h2 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+p {
+  max-width: 65ch;
+  color: var(--color-text-muted);
 }
