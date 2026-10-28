@@ -1,0 +1,30 @@
+---
+import { ArrowRight, Download } from 'lucide-preact'
+import { cn } from '@shared/lib/cn'
+import { HERO } from '@config/website'
+import Image from '../Image.astro'
+const { name, lastName, description, download, urlProjects, role, image } = HERO
+---
+
+<header class='p-4 flex items-center min-h-100'>
+  <article class='max-width grid md:grid-cols-2 gap-8'>
+    <section class='flex flex-col gap-4 order-2 md:order-1'>
+      <div>
+        <span class='text-3xl text-muted'>Hi, I'm</span>
+        <h1 class='font-bold'>{name} <span class='text-accent'>{lastName}</span></h1>
+        <span class='text-3xl text-muted'>{role}</span>
+      </div>
+      <p class='text-lg'>{description}</p>
+      <div class='flex gap-4'>
+        <a href={urlProjects} class={cn('button', 'shadow bg-brand text-white')}>
+          View My Projects <ArrowRight size={20} />
+        </a>
+        <a href={download} class={cn('button', 'shadow')}>
+          Download CV <Download size={20} />
+        </a>
+      </div>
+    </section>
+
+    <Image src={image.src} alt={image.alt} />
+  </article>
+</header>

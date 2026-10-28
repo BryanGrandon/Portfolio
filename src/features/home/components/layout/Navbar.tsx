@@ -1,11 +1,11 @@
 import { useEffect, useState } from 'preact/hooks'
-import useNavbar from '../hooks/useNavbar'
-import { NAVIGATION } from '../utils/navigation'
-import { handlerNavbarScroll } from '../utils/navbar'
-import MenuButton from './MenuButton'
-import { cn } from '../../../shared/lib/cn'
-import { SOCIAL } from '../../../config/website'
-import LightDarkButton from '../../../shared/components/LightDarkButton'
+import { cn } from '@shared/lib/cn'
+import { SOCIAL } from '@config/website'
+import useNavbar from '../../hooks/useNavbar'
+import { NAVIGATION } from '../../utils/navigation'
+import { handlerNavbarScroll } from '../../utils/navbar'
+import LightDarkButton from '@shared/components/LightDarkButton'
+import MenuButton from '../MenuButton'
 
 const Navbar = () => {
   const { selected, visibleSectionListener } = useNavbar()
@@ -19,9 +19,9 @@ const Navbar = () => {
   }, [isOpen])
 
   return (
-    <>
-      <nav id='navbar' className='fixed top-0 inset-x-0 flex z-10 flex-col  border-b border-divider bg-surface'>
-        <article className='flex justify-between items-center px-4 py-2 md:py-0'>
+    <nav id='navbar' className='fixed top-0 inset-x-0 flex z-10 flex-col border-b border-divider bg-surface px-4'>
+      <article class='max-width'>
+        <article className='flex justify-between items-center py-3 md:py-0'>
           <h3 className='font-semibold tracking-wide text-xl'>
             Bryan <span className='text-brand'>Grandón</span>
           </h3>
@@ -65,8 +65,8 @@ const Navbar = () => {
             </ul>
           </article>
         )}
-      </nav>
-    </>
+      </article>
+    </nav>
   )
 }
 

@@ -1,7 +1,5 @@
 ---
 import Layout from '../layouts/Layout.astro'
-import Header from '../components/home/layout/Header.astro'
-import Navbar from '../components/core/layout/Navbar'
 import AboutMe from '../components/home/layout/AboutMe.astro'
 import ProjectsHighlight from '../components/home/layout/ProjectsHighlight.astro'
 import Skills from '../components/home/layout/Skills.astro'
@@ -12,10 +10,6 @@ import HomePage from '../features/home/HomePage.astro'
 
 <Layout>
   <HomePage />
-
-  <!-- <Navbar client:only /> -->
-  <Header />
-
   <main id='main'>
     <AboutMe />
     <ProjectsHighlight />

@@ -1,0 +1,64 @@
+---
+import { cn } from '@shared/lib/cn'
+
+interface Props {
+  src: string
+  alt: string
+}
+
+const { src, alt } = Astro.props
+---
+
+<div class='group relative order-1 mx-auto size-65 md:order-2'>
+  <!-- Halo of Light -->
+  <div
+    class={cn(
+      'absolute -inset-5 rounded-full',
+      'bg-linear-to-br from-accent/30 via-brand/20 to-purple-500/30',
+      'opacity-60 blur-2xl transition-opacity duration-500',
+      'group-hover:opacity-100',
+    )}
+  >
+  </div>
+
+  <!-- Outer orbit -->
+  <div
+    class={cn(
+      'absolute -inset-4 rounded-full border border-accent/30',
+      'transition-transform duration-700',
+      'group-hover:rotate-12',
+    )}
+  >
+  </div>
+
+  <!-- Gradient Ring -->
+  <div
+    class={cn(
+      'relative size-full rounded-full',
+      'bg-linear-to-br from-cyan-400 via-accent to-purple-500',
+      'p-1 shadow-xl shadow-accent/20',
+      'transition-transform duration-500',
+      'group-hover:scale-105',
+    )}
+  >
+    <img
+      class='size-full rounded-full border-4 border-surface
+             object-cover'
+      src={src}
+      alt={alt}
+      width='260'
+      height='260'
+      fetchpriority='high'
+    />
+  </div>
+
+  <!-- Decorative elements -->
+  <span
+    class={cn(
+      'absolute -right-2 top-8 size-4 rounded-full',
+      'border-2 border-surface bg-accent',
+      'shadow-lg shadow-accent/50',
+    )}></span>
+
+  <span class={cn('absolute -bottom-1 left-6 size-3 rounded-full', 'bg-cyan-400 shadow-lg shadow-cyan-400/50')}></span>
+</div>

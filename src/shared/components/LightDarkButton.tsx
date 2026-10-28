@@ -25,7 +25,7 @@ const LightDarkButton = () => {
       onClick={toggleTheme}
       aria-label={theme === 'dark' ? 'Turn on light mode' : 'Turn on dark mode'}
       title={theme === 'dark' ? 'Light Mode' : 'Dark Mode'}
-      className='rounded-full border border-divider bg-surface p-2 cursor-pointer text-foreground transition-colors hover:bg-surface-hover'
+      className='rounded-full cursor-pointer text-foreground transition-colors hover:bg-surface-hover'
     >
       <span className='relative flex size-5 items-center justify-center'>
         <Sun

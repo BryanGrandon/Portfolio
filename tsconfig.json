@@ -9,6 +9,23 @@
   ],
   "compilerOptions": {
     "jsx": "react-jsx",
-    "jsxImportSource": "preact"
+    "jsxImportSource": "preact",
+    "paths": {
+      "@shared/*": [
+        "./src/shared/*"
+      ],
+      "@config/*": [
+        "./src/config/*"
+      ],
+      "@styles/*": [
+        "./src/styles/*"
+      ],
+      "@layouts/*": [
+        "./src/layouts/*"
+      ],
+      "@features/*": [
+        "./src/features/*"
+      ],
+    }
   }
 }
