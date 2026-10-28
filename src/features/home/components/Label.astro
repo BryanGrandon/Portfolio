@@ -1,0 +1,12 @@
+---
+interface Props {
+  title: string
+}
+const { title } = Astro.props
+import { CodeXml } from 'lucide-preact'
+---
+
+<span class='text-accent text-lg capitalize flex gap-2'>
+  <CodeXml size={25} className='text-accent' />
+  {title}
+</span>

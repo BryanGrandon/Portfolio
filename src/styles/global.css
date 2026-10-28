@@ -31,3 +31,7 @@
     scale: 1.02;
   }
 }
+
+.hero_label {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+}

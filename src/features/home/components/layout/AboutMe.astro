@@ -1,0 +1,40 @@
+---
+import Label from '../Label.astro'
+import { ABOUT_ME } from '@config/website'
+const { description, technologies, general } = ABOUT_ME
+---
+
+<article id='about' class='bg-surface min-h-110 grid items-center p-4'>
+  <article class='max-width grid gap-2'>
+    <Label title='About me' />
+    <section class='grid lg:grid-cols-[1.5fr_41px_1fr] gap-4'>
+      <section class=''>
+        <h2 class='font-bold'>Who I am</h2>
+        <p>{description}</p>
+        <div class='py-4 flex flex-wrap gap-2 max-w-160'>
+          {
+            technologies.map((el) => (
+              <div class='flex items-center gap-2 border border-divider py-1 px-2 rounded bg-surface-elevated'>
+                <el.icon /> {el.label}
+              </div>
+            ))
+          }
+        </div>
+      </section>
+      <hr class='block border-0 lg:w-px w-full h-px lg:h-full bg-divider' />
+      <section class='flex flex-col gap-4'>
+        {
+          general.map((el) => (
+            <div class='flex items-star gap-4'>
+              <el.icon size={30} className='text-accent' />
+              <div>
+                <h3 class='text-lg font-semibold'>{el.label}</h3>
+                <p>{el.text}</p>
+              </div>
+            </div>
+          ))
+        }
+      </section>
+    </section>
+  </article>
+</article>
