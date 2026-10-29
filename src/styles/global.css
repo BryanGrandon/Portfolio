@@ -22,16 +22,12 @@
   padding: 0.5rem 1rem;
   border-radius: 2rem;
   cursor: pointer;
-  border: 1px solid var(--color-border);
 
-  &:hover {
-    scale: 0.98;
-  }
   &:active {
-    scale: 1.02;
+    scale: 0.98;
   }
 }
 
 .hero_label {
-  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-size: clamp(1.5rem, 2.5vw, 1.6rem);
 }

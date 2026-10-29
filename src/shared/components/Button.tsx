@@ -14,7 +14,7 @@ const Button = ({ title, onClick, className = '', icon: Icon }: Props) => {
       onClick={onClick}
       className={cn(
         'flex items-center gap-2 border border-divider py-2 px-4 rounded-full cursor-pointer',
-        'shadow hover:scale-98 active:scale-102',
+        'shadow hover:scale-102 active:scale-98',
         className,
       )}
     >

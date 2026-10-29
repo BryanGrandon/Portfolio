@@ -16,11 +16,26 @@ const { name, lastName, description, links, role, image } = HERO
       </div>
       <p class='text-lg'>{description}</p>
       <div class='flex gap-4'>
-        <a href={links.projects} class={cn('button', 'shadow bg-brand text-white')}>
-          View My Projects <ArrowRight size={20} />
+        <a
+          href={links.projects}
+          class={cn(
+            'button',
+            'shadow shadow-brand transition-colors duration-350 bg-brand/80 hover:bg-accent text-white group',
+          )}
+        >
+          View My Projects <ArrowRight
+            size={20}
+            className='transition-transform duration-300 group-hover:translate-x-1'
+          />
         </a>
-        <a href={links.download} class={cn('button', 'shadow')}>
-          Download CV <Download size={20} />
+        <a
+          href={links.download}
+          class={cn(
+            'button group',
+            'shadow border border-divider transition-colors duration-350 bg-surface hover:bg-surface-elevated',
+          )}
+        >
+          Download CV <Download size={20} className='transition-transform duration-300 group-hover:-rotate-6' />
         </a>
       </div>
     </section>

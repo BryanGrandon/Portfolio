@@ -4,6 +4,7 @@ import ContactInfo from '../ui/ContactInfo.astro'
 import { IconClock, IconEmail, IconTimeZone } from '../../core/icons/IconContactMe'
 import { WEBSITE_CONTACT } from '../../../utils/constants/website'
 import { ArrowRight, Mail } from 'lucide-preact'
+import ContactButton from './test'
 const { title, subtitle, paragraph } = WEBSITE_CONTACT
 ---
 
@@ -18,7 +19,7 @@ const { title, subtitle, paragraph } = WEBSITE_CONTACT
         href='mailto:tu@email.com'
         class='group inline-flex items-center justify-center gap-3
         rounded-full px-6 py-3
-        bg-linear-to-r from-indigo-500 to-blue-500
+        bg-linear-to-r from-brand to-accent
         font-medium text-white
         shadow-lg shadow-indigo-500/20
         transition-all duration-300
@@ -31,11 +32,10 @@ const { title, subtitle, paragraph } = WEBSITE_CONTACT
         active:scale-95'
       >
         <Mail size={20} className='transition-transform duration-300 group-hover:-rotate-6' />
-
         <span>Get in touch</span>
-
         <ArrowRight size={20} className='transition-transform duration-300 group-hover:translate-x-1' />
       </a>
+      <ContactButton client:only />
     </article>
     <article class='flex gap-4 flex-wrap'>
       <ContactInfo title='Email' text='bryan.grandon.c@gmail.com'><IconEmail slot='icon' /></ContactInfo>

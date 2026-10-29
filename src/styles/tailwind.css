@@ -18,4 +18,5 @@
 
   /* Background */
   --color-background: var(--background);
+  --background-image-gradient-primary: var(--gradient-primary);
 }

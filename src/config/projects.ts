@@ -1,4 +1,6 @@
-export type Project = {
+import { getTechnologies } from '@features/home/utils/getTechnologies'
+
+export type ProjectContent = {
   title: string
   description: string
   image: {
@@ -11,7 +13,7 @@ export type Project = {
   highlight: boolean
 }
 
-export const PROJECTS: Project[] = [
+const PROJECTS_CONTENT: ProjectContent[] = [
   {
     title: 'Color Palette',
     description:
@@ -196,3 +198,12 @@ export const PROJECTS: Project[] = [
     highlight: true,
   },
 ]
+
+export const PROJECTS = PROJECTS_CONTENT.map((el) => {
+  const tech = getTechnologies(el.technologies)
+  return { ...el, technologies: tech }
+})
+
+export const FEATURE_PROJECTS = PROJECTS.filter((el) => el.highlight == true).sort((a, b) =>
+  a.title.localeCompare(b.title),
+)
