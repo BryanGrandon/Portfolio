@@ -1,10 +1,10 @@
 ---
 import Label from '../Label.astro'
-import { ABOUT_ME } from '@config/website'
+import { ABOUT_ME } from '@config/about-me'
 const { description, technologies, general } = ABOUT_ME
 ---
 
-<article id='about' class='bg-surface min-h-110 grid items-center p-4'>
+<article id='about' class='bg-background min-h-110 grid items-center px-4 py-10'>
   <article class='max-width grid gap-2'>
     <Label title='About me' />
     <section class='grid lg:grid-cols-[1.5fr_41px_1fr] gap-4'>

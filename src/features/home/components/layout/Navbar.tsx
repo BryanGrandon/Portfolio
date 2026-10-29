@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'preact/hooks'
 import { cn } from '@shared/lib/cn'
-import { SOCIAL } from '@config/website'
+import { SOCIAL } from '@config/social'
 import useNavbar from '../../hooks/useNavbar'
-import { NAVIGATION } from '../../utils/navigation'
-import { handlerNavbarScroll } from '../../utils/navbar'
+import { NAVIGATION } from '@config/navigation'
+import { handlerNavbarScroll } from '../../utils/handlerNavbarScroll'
 import LightDarkButton from '@shared/components/LightDarkButton'
 import MenuButton from '../MenuButton'
 
@@ -19,7 +19,7 @@ const Navbar = () => {
   }, [isOpen])
 
   return (
-    <nav id='navbar' className='fixed top-0 inset-x-0 flex z-10 flex-col border-b border-divider bg-surface px-4'>
+    <nav id='navbar' className='fixed top-0 inset-x-0 flex z-10 flex-col border-b border-divider bg-background px-4'>
       <article class='max-width'>
         <article className='flex justify-between items-center py-3 md:py-0'>
           <h3 className='font-semibold tracking-wide text-xl'>

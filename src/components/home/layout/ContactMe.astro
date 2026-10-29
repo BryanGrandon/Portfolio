@@ -3,6 +3,7 @@ import Title from '../../core/ui/Title.astro'
 import ContactInfo from '../ui/ContactInfo.astro'
 import { IconClock, IconEmail, IconTimeZone } from '../../core/icons/IconContactMe'
 import { WEBSITE_CONTACT } from '../../../utils/constants/website'
+import { ArrowRight, Mail } from 'lucide-preact'
 const { title, subtitle, paragraph } = WEBSITE_CONTACT
 ---
 
@@ -13,6 +14,28 @@ const { title, subtitle, paragraph } = WEBSITE_CONTACT
       <section>
         {paragraph.map((text) => <p class='prose dark:prose-invert'>{text}</p>)}
       </section>
+      <a
+        href='mailto:tu@email.com'
+        class='group inline-flex items-center justify-center gap-3
+        rounded-full px-6 py-3
+        bg-linear-to-r from-indigo-500 to-blue-500
+        font-medium text-white
+        shadow-lg shadow-indigo-500/20
+        transition-all duration-300
+        hover:from-indigo-600 hover:to-blue-600
+        hover:shadow-xl hover:shadow-indigo-500/30
+        focus-visible:outline-none
+        focus-visible:ring-2 focus-visible:ring-indigo-400
+        focus-visible:ring-offset-2
+        focus-visible:ring-offset-slate-950
+        active:scale-95'
+      >
+        <Mail size={20} className='transition-transform duration-300 group-hover:-rotate-6' />
+
+        <span>Get in touch</span>
+
+        <ArrowRight size={20} className='transition-transform duration-300 group-hover:translate-x-1' />
+      </a>
     </article>
     <article class='flex gap-4 flex-wrap'>
       <ContactInfo title='Email' text='bryan.grandon.c@gmail.com'><IconEmail slot='icon' /></ContactInfo>

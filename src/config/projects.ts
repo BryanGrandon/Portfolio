@@ -1,0 +1,198 @@
+export type Project = {
+  title: string
+  description: string
+  image: {
+    src: string
+    alt: string
+  }
+  url: string
+  ariaLabel: string
+  technologies: string[]
+  highlight: boolean
+}
+
+export const PROJECTS: Project[] = [
+  {
+    title: 'Color Palette',
+    description:
+      'Color-Palette is a web tool for quickly and intuitively generating color palettes, ideal for web design and visual projects.',
+    image: {
+      src: '/Portfolio/images/projects/color-palette.webp',
+      alt: 'view of the Color Palette web application showing a generated color palette',
+    },
+    url: 'https://bryangrandon.github.io/Color-Palette/',
+    ariaLabel: 'Open Color Palette project: a web tool to generate color palettes',
+    technologies: ['React', 'TypeScript', 'Vite', 'Sass', 'React_Router', 'Vitest', 'React_Toastify', 'Extract_Color'],
+    highlight: true,
+  },
+  {
+    title: 'Pokedex',
+    description:
+      'Pokedex is a web application for quickly and easily searching for and viewing information about Pokémon.',
+    image: {
+      src: '/Portfolio/images/projects/pokedex.webp',
+      alt: 'view of the Pokedex web application showing a list of Pokémon with images and names',
+    },
+    url: 'https://bryangrandon.github.io/Pokedex/',
+    ariaLabel: 'Open Pokedex project: a web app to search and view Pokémon information',
+    technologies: ['React', 'Vite', 'Sass', 'React_Icons'],
+    highlight: false,
+  },
+  {
+    title: 'Midas touch',
+    description:
+      'Midas Touch is a landing page that promotes new talent through training, mentoring, and opportunities for professional growth.',
+    image: {
+      src: '/Portfolio/images/projects/midas-touch.webp',
+      alt: 'view of the Midas Touch landing page showcasing training and mentorship for new talent',
+    },
+    url: 'https://bryangrandon.github.io/Midas-Touch/',
+    ariaLabel: 'Open Midas Touch project: landing page that supports new talent with training and mentorship',
+    technologies: ['TypeScript', 'Astro', 'TailwindCSS'],
+    highlight: true,
+  },
+  {
+    title: 'Nasa',
+    description:
+      'NASA is a space-themed website that displays the Astronomy Picture of the Day alongside a brief explanation, offering a modern and visual experience for exploring the universe.',
+    image: {
+      src: '/Portfolio/images/projects/nasa.webp',
+      alt: 'view of the Nasa web application showing the Astronomy Picture of the Day with explanation',
+    },
+    url: 'https://bryangrandon.github.io/Nasa/',
+    ariaLabel:
+      'Open Nasa project: space site displaying the Astronomical Image of the Day with a daily astronomer explanation',
+    technologies: ['React', 'Vite', 'Sass', 'React_Icons'],
+    highlight: false,
+  },
+  {
+    title: 'AniDex',
+    description: 'AniDex is a website for quickly and easily searching and exploring information about anime series.',
+    image: {
+      src: '/Portfolio/images/projects/anidex.webp',
+      alt: 'view of the AniDex web application showing a list of anime series with images and titles',
+    },
+    url: 'https://bryangrandon.github.io/AniDex/',
+    ariaLabel: 'Open AniDex project: a website to search and explore anime information',
+    technologies: ['Astro', 'TailwindCSS', 'TypeScript'],
+    highlight: false,
+  },
+  {
+    title: 'Rick and Morty',
+    description:
+      'Rick and Morty is a website for quickly exploring characters, locations, and facts from the series in a visual way.',
+    image: {
+      src: '/Portfolio/images/projects/rick-and-morty.webp',
+      alt: 'View of the Rick and Morty web application showing a list of characters with images and names',
+    },
+    url: 'https://bryangrandon.github.io/Rick-and-Morty/',
+    ariaLabel: 'Open Rick and Morty project: a site to explore characters and information from the series',
+    technologies: ['React', 'TypeScript', 'Vite', 'Sass', 'React_Icons'],
+    highlight: false,
+  },
+  {
+    title: 'Dragon Ball',
+    description:
+      'Dragon Ball is a website for quickly and visually exploring characters and information from the Dragon Ball universe.',
+    image: {
+      src: '/Portfolio/images/projects/dragon-ball.webp',
+      alt: 'View of the Dragon Ball web application showing a list of characters with images and names',
+    },
+    url: 'https://bryangrandon.github.io/Dragon-Ball/',
+    ariaLabel: 'Open Dragon Ball project: a site to explore characters and information from the Dragon Ball universe',
+    technologies: ['Astro', 'TypeScript', 'TailwindCSS'],
+    highlight: false,
+  },
+  {
+    title: 'Free Games',
+    description:
+      'Free Games is a web application that provides a list of free games available on the Epic Games Store. It allows users to view game details, including images, descriptions, and links to the Epic Games Store.',
+    image: {
+      src: '/Portfolio/images/projects/free-games.webp',
+      alt: 'View of the Free Games web application showing a list of free games with images and titles',
+    },
+    url: 'https://bryangrandon.github.io/Free-Games/',
+    ariaLabel: 'Open Free Games project: a site to view free games and their details',
+    technologies: ['React', 'TypeScript', 'Vite', 'TailwindCSS', 'Vitest'],
+    highlight: false,
+  },
+  {
+    title: 'Countries',
+    description:
+      'Countries is a website for quickly and visually searching and consulting data on countries around the world.',
+    image: {
+      src: '/Portfolio/images/projects/countries.webp',
+      alt: 'View of the Countries web application showing a list of countries with flags and names',
+    },
+    url: 'https://bryangrandon.github.io/Countries/',
+    ariaLabel: 'Open Countries project: website to quickly search and view information about countries worldwide',
+    technologies: ['React', 'Vite', 'Sass', 'React_Icons', 'React_Router'],
+    highlight: false,
+  },
+  {
+    title: 'Caesar-Cipher',
+    description:
+      'Caesar-Cipher is a web tool that encrypts and decrypts text using Caesar cipher, ideal for learning basic cryptography with a simple and accessible interface.',
+    image: {
+      src: '/Portfolio/images/projects/caesar-cipher.webp',
+      alt: 'view of the Caesar-Cipher web application showing text encryption and decryption options',
+    },
+    url: 'https://bryangrandon.github.io/Caesar-Cipher/',
+    ariaLabel: 'Open Caesar-Cipher project: encrypt and decrypt text using the Caesar cipher',
+    technologies: ['React', 'Vite', 'Sass', 'React_Icons'],
+    highlight: false,
+  },
+  {
+    title: 'Random Color Generation',
+    description:
+      'Random color generator with one click. Displays color codes for quick use in design or development, with a simple and responsive interface.',
+    image: {
+      src: '/Portfolio/images/projects/random-color.webp',
+      alt: 'View of the Random Color Generation web application showing generated colors with their codes',
+    },
+    url: 'https://bryangrandon.github.io/Random-Color-Generation/',
+    ariaLabel:
+      'Open Random Color Generation project: generate random colors instantly with codes for design and development',
+    technologies: ['React', 'Vite', 'Sass', 'gh-pages'],
+    highlight: false,
+  },
+  {
+    title: 'Portfolio v1',
+    description:
+      "Portfolio v1 is a personal website that showcases the author's web projects with a clear and responsive presentation, highlighting development technologies and skills.",
+    image: {
+      src: '/Portfolio/images/projects/portfolio-v1.webp',
+      alt: 'View of the Portfolio v1 website showcasing web development projects and skills',
+    },
+    url: 'https://bryangrandon.github.io/Portfolio-v1/',
+    ariaLabel: 'Open Portfolio v1 project: a personal website showcasing web development projects and skills.',
+    technologies: ['React', 'TypeScript', 'Vite', 'Sass', 'Vitest'],
+    highlight: false,
+  },
+  {
+    title: 'Brisa de Paz',
+    description:
+      'Brisa de Paz is a website that showcases fragrances and personal care products in an attractive and easy-to-browse format.',
+    image: {
+      src: '/Portfolio/images/projects/brisa-de-paz.webp',
+      alt: 'View of the Brisa de Paz website showcasing fragrances and personal care products',
+    },
+    url: 'https://bryangrandon.github.io/Brisa-de-paz/',
+    ariaLabel: 'Open Brisa de Paz website to explore fragrances and personal care products',
+    technologies: ['Astro', 'TypeScript', 'TailwindCSS', 'nanostores'],
+    highlight: true,
+  },
+  {
+    title: 'Flag Quiz',
+    description:
+      'Interactive geography quiz game where players guess countries by their flags through multiple game modes.',
+    image: {
+      src: '/Portfolio/images/projects/flag-quiz.webp',
+      alt: 'Flag Quiz game preview',
+    },
+    url: 'https://bryangrandon.github.io/Flag-Quiz/',
+    ariaLabel: 'Visit Flag Quiz project',
+    technologies: ['TypeScript', 'TailwindCSS', 'Vite', 'React'],
+    highlight: true,
+  },
+]

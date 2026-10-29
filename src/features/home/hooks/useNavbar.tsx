@@ -1,5 +1,5 @@
 import { useState } from 'preact/hooks'
-import { NAVIGATION } from '../utils/navigation'
+import { NAVIGATION } from '@config/navigation'
 
 const useNavbar = () => {
   const [selected, setSelected] = useState('home')

@@ -1,8 +1,7 @@
 ---
 import { NAVIGATION } from '../../../utils/constants/navigation'
 import { WEBSITE_SOCIAL } from '../../../utils/constants/website'
-import IconGithub from '../icons/IconGithub'
-import IconLinkedin from '../icons/IconLinkedin'
+
 import LinkIcon from '../ui/LinkIcon.astro'
 ---
 
@@ -11,14 +10,7 @@ import LinkIcon from '../ui/LinkIcon.astro'
     <section class='flex flex-col gap-2'>
       <h3 class='text-xl font-basicaline font-semibold'>BG Code.</h3>
       <section>
-        <ul class='flex gap-4'>
-          <LinkIcon href={WEBSITE_SOCIAL.github.url} ariaLabel={WEBSITE_SOCIAL.github.ariaLabel}>
-            <IconGithub size='2rem' slot='icon' />
-          </LinkIcon>
-          <LinkIcon href={WEBSITE_SOCIAL.linkedin.url} ariaLabel={WEBSITE_SOCIAL.linkedin.ariaLabel}>
-            <IconLinkedin size='2rem' slot='icon' />
-          </LinkIcon>
-        </ul>
+        <ul class='flex gap-4'></ul>
       </section>
     </section>
     <section class='flex gap-8'>
