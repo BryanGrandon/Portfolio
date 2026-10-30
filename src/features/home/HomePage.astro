@@ -1,12 +1,13 @@
 ---
+import { ArrowRight, ExternalLink } from 'lucide-preact'
 import Navbar from './components/layout/Navbar'
 import Hero from './components/layout/Hero.astro'
 import SectionLayout from './components/layout/SectionLayout.astro'
-import { ABOUT_ME } from '@config/about-me'
-import { FEATURE_PROJECTS } from '@config/projects'
-import { ArrowRight, ExternalLink } from 'lucide-preact'
-import { NAVIGATION_PAGE } from '@config/navigation'
 import ContactButton from './components/ContactButton'
+import { NAVIGATION_PAGE } from '@config/navigation'
+import { FEATURE_PROJECTS } from '@config/projects'
+import { ABOUT_ME } from '@config/about-me'
+import Footer from '@shared/components/Footer'
 ---
 
 <Navbar client:only />
@@ -85,11 +86,17 @@ import ContactButton from './components/ContactButton'
     </div>
   </SectionLayout>
 
-  <SectionLayout label='Contact' id='contact' background='bg-background' classContainer='grid gap-6'>
-    <section class='grid gap-4'>
-      <h2>Let's work together</h2>
+  <SectionLayout
+    label='Contact'
+    id='contact'
+    background='bg-background'
+    classContainer='flex flex-col gap-2 justify-center items-center h-full'
+  >
+    <h2>Let's work together</h2>
+    <section class='flex flex-col gap-4 justify-center items-center'>
       <p>Have an opportunity or a project in mind? I'd love to hear from you.</p>
-      <ContactButton />
+      <ContactButton client:only />
     </section>
   </SectionLayout>
+  <Footer client:only />
 </main>
